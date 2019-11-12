@@ -1,8 +1,7 @@
 package com.example.mercadoesclavoentregable;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+import androidx.fragment.app.FragmentManager;
 
 public class MainActivity extends AppCompatActivity implements ListaFragment.ListaFragmentListener {
 
