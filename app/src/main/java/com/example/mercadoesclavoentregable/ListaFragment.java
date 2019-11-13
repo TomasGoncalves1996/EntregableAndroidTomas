@@ -8,7 +8,7 @@ public class ListaFragment extends Fragment implements ProductoAdapter.ChatAdapt
     private RecyclerView recyclerView;
     private ListaFragmentListener listaFragmentListener;
 
-    public ListaFragment(RecyclerView recyclerView, ListaFragmentListener listaFragmentListener) {
+    public ListaFragment() {
         this.recyclerView = recyclerView;
         this.listaFragmentListener = listaFragmentListener;
     }

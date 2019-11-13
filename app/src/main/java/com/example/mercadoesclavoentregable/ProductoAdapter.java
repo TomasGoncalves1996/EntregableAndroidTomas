@@ -24,7 +24,6 @@ public class ProductoAdapter extends RecyclerView.Adapter {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        //inflar el xml (pasar xml a View)
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.celda_producto, parent, false);
         ProductoViewHolder productoViewHolder = new ProductoViewHolder(view);
@@ -53,11 +52,7 @@ public class ProductoAdapter extends RecyclerView.Adapter {
         private TextView textViewceldaPrecio;
         private Producto producto;
 
-        /**
-         * Constructor
-         * hacemos los findViewById de los elemtnos del ItemVIew Inflado Previamente
-         * @param itemView
-         */
+
         public ProductoViewHolder(@NonNull View itemView) {
             super(itemView);
             this.imageViewCeldaImagen = itemView.findViewById(R.id.imageViewCeldaImagen);
